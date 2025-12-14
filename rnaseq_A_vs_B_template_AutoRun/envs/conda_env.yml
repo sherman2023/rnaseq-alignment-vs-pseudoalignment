@@ -1,0 +1,29 @@
+name: rnaseq-avsb
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  # core workflow tools
+  - sra-tools>=3
+  - fastqc
+  - multiqc
+  - pigz
+  - curl
+  - wget
+  - star
+  - samtools
+  - subread  # featureCounts
+  - salmon
+
+  # R + packages for DE and tximport
+  - r-base>=4.3
+  - r-tibble
+  - r-dplyr
+  - r-readr
+  - r-ggplot2
+  - bioconductor-deseq2
+  - bioconductor-tximport
+  - bioconductor-rtracklayer
+
+  # optional (handy utilities)
+  - python>=3.10
